@@ -1,7 +1,7 @@
 section.box-center {
   height: 100%;
   padding: 0;
-
+  width: 100%;
   .container {
     display: flex;
     align-items: center;
@@ -12,5 +12,27 @@ section.box-center {
   &.space-around > .container {
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+
+section.simple-slide {
+  height: 100%;
+  padding: 0;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    .content {
+      flex-grow: 1;
+      .stuff {
+        margin-left: 75px;
+        margin-right: 75px;
+      }
+      margin-top: 40px;
+      width: 100%;
+      text-align: left;
+    }
   }
 }
