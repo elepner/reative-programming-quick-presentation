@@ -48,8 +48,11 @@ Reveal.initialize({
   margin: 0,
   width: "100%",
   height: "100%",
+  history: true
 });
 
-RevealMarkdown.initialize();
+RevealMarkdown.initialize({
+  
+});
 
 hljs.initHighlightingOnLoad();
