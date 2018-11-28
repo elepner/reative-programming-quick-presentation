@@ -16,6 +16,7 @@ import pageHTML from './slides/000-page-html.slide.html';
 import pageMarkDown from './slides/000-page-md.slide.md';
 import pageIcons from './slides/000-page-icons.slide.html';
 import currentProblems from './slides/current-problems.html'
+import avgFeTask from './slides/avg-fe-task.html'
 // Star Wars Theme
 
 import swTitle from './slides/100-sw-title.slide.html';
@@ -29,6 +30,7 @@ import swTitle from './slides/100-sw-title.slide.html';
 const slides = [
   swTitle,
   currentProblems,
+  avgFeTask,
   pageJS,
   pageHTML,
   pageMarkDown,
