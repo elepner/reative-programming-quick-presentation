@@ -22,7 +22,7 @@ import avgFeTask from './slides/avg-fe-task.html'
 import swTitle from './slides/100-sw-title.slide.html';
 
 import tripleClick from './slides/triplie-click.html'
-
+import keyConcepts from './slides/key-conceps-of-observables.html';
 
 // -------------------------------------------------------------------------
 // Slides
@@ -33,6 +33,7 @@ const slides = [
   currentProblems,
   avgFeTask,
   tripleClick,
+  keyConcepts,
   pageJS,
   pageHTML,
   pageMarkDown,
