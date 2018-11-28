@@ -12,3 +12,7 @@
 @import 'common';
 @import './themes/star-wars/star-wars';
 @import 'theme';
+
+.reveal pre code {
+  max-height: 800px!important
+}

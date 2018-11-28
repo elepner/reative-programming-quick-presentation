@@ -1,0 +1,63 @@
+<section class="simple-slide">
+  <div class="container">
+    <h1>Triple Click</h1>
+    <div class="content posR">
+        <div style="width: 50%; float: left; height: 1000px;">
+            <div data-markdown>
+              <textarea data-template>
+                        ```javascript
+                          // We will need a counter, the old position and a timer
+var clickCounter = 0;
+var clickTimer;
+
+// The listener (container may be any HTML element)
+container.addEventListener('click', function (event) {
+
+    // Get the current mouse position
+    var mousePosition = getMousePosition(event);
+
+    // Function to reset the data
+    var resetClick = function () {
+        clickCounter = 0;
+    }
+
+    // Function to wait for the next click
+    var conserveClick = function () {
+        clickPosition = mousePosition;
+        clearTimeout(clickTimer);
+        clickTimer = setTimeout(resetClick, 250);
+    }
+
+    // If position has not changed
+    if (clickCounter && clickPosition.x == mousePosition.x && clickPosition.y == mousePosition.y) {
+        clickCounter++;
+        if (clickCounter == 3) {
+            // Do something on triple click
+            resetClick();
+        }
+        conserveClick();
+    }
+});
+                        ```
+                        </textarea>
+            </div>
+          </div>
+      <div style="width: 50%; float: right;">
+        <div data-markdown>
+          <textarea data-template>
+                    ```javascript
+                    this.click$.pipe(
+                      bufferWhen(
+                        () => this.click$.pipe(delay(500))
+                      ),
+                      filter(events => events.length === 3)
+                    ).subscribe(() => {
+                      console.log("TRIPLE CLICK!!")
+                    })
+                    ```
+                    </textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

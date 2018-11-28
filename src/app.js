@@ -21,6 +21,7 @@ import avgFeTask from './slides/avg-fe-task.html'
 
 import swTitle from './slides/100-sw-title.slide.html';
 
+import tripleClick from './slides/triplie-click.html'
 
 
 // -------------------------------------------------------------------------
@@ -31,6 +32,7 @@ const slides = [
   swTitle,
   currentProblems,
   avgFeTask,
+  tripleClick,
   pageJS,
   pageHTML,
   pageMarkDown,
